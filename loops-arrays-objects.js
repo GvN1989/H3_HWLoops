@@ -9,6 +9,30 @@ const scores = [
     {name: 'Rianne', score: 66, grade: null}
 ];
 
+console.log("Opdracht 1a: ")
+
+for (let i = 0; i < scores.length; i++) {
+    console.log(scores[i].score) }
+
+
+
+console.log("Opdracht 1b: ")
+
+for (let i = 0; i < scores.length; i++)
+    if (scores[i].score > 90 && scores[i].score <= 100) {
+        console.log(scores[i].grade="A");
+    } else if (scores[i].score > 80 && scores[i].score <= 90) {
+        console.log(scores[i].grade="B");
+    } else if (scores[i].score > 70 && scores[i].score <= 80) {
+        console.log(scores[i].grade="C");
+    } else if (scores[i].score > 60 && scores[i].score <= 70) {
+        console.log(scores[i].grade="D");
+    } else {
+        console.log(scores[i].grade="F")
+}
+
+console.log(scores)
+
 // Verwachtte uitkomsten:
 // 83
 // 77
@@ -33,9 +57,6 @@ const scores = [
 // ==========================================
 
 
-
-
-
 // ==========================================
 // Opdracht 1c
 // Breid je script uit door de bijbehorende letter op te slaan in de 'grade'-property van ieder student-object in de array.
@@ -49,6 +70,8 @@ const scores = [
 //  ];
 // ==========================================
 
+
+console.log("Opdracht 1c: ")
 
 
 
@@ -75,10 +98,11 @@ const NOVIEmployees = [
 //  ];
 // ==========================================
 
+console.log("opdracht 2: ")
 
-
-
-
+for (let i = 0; i < NOVIEmployees.length; i++) {
+    console.log("email: " + NOVIEmployees[i].firstName+"."+NOVIEmployees[i].lastName+"@novi.nl")
+}
 
 // Opdracht 2-BONUS
 // Lukt het je om ervoor te zorgen dat alle e-mailadressen in lowercase letters komen te staan? Dit heb je nog niet geleerd, maar google is your best friend...
@@ -113,6 +137,34 @@ const students = [
     {name: 'Aicha', city: 'Utrecht', zipCode: '3514', neighborhood: null},
     {name: 'Karima', city: 'Utrecht', zipCode: '3531', neighborhood: null},
 ];
+
+for (let i = 0; i < students.length; i++) {
+    switch(students[i].zipCode) {
+        case "3513":
+            console.log(students[i].neighborhood = "Pijlsweerd");
+            break;
+        case "3514":
+            console.log(students[i].neighborhood = "Vogelenbuurt");
+            break;
+        case "3512":
+            console.log(students[i].neighborhood = "Binnenstad");
+            break;
+        case "3531":
+            console.log(students[i].neighborhood = "Lombok");
+            break;
+        case "3572":
+            console.log(students[i].neighborhood = "Wittevrouwen");
+            break;
+        case "3581":
+            console.log(students[i].neighborhood = "Oudwijk");
+            break;
+        case "3583":
+            console.log(students[i].neighborhood = "Schildersbuurt");
+            break;
+    }
+}
+
+console.log (students)
 
 // Verwachte uitkomsten:
 // [
