@@ -11,7 +11,15 @@
 // Dit heb je nog niet geleerd, maar bekijk hiervoor dit MDN-artikel eens: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/repeat
 // ==========================================
 
+const star = "*"
 
+console.log(star)
+
+for (let i = 2; i < 6; i++) {
+    let line = "*".repeat(i);
+
+    console.log (line)
+}
 
 
 
@@ -25,9 +33,13 @@
 // klaar!
 // ==========================================
 
-
-
-
+for (let i = 0; i < 5; i++) {
+    if ( i<=3) {
+        console.log("loop...")
+    } else {
+        console.log ("klaar!")
+    }
+}
 
 // ==========================================
 // Opdracht 3: maak een for-loop die van 0 tot 9 loopt en de getallen 0 tot 9 logt.
@@ -45,7 +57,16 @@
 // >> 9
 // ==========================================
 
-
+for (let i = 0; i < 10; i++)
+    if (i <= 5 && i >= 3)
+    { console.log("> " + i);
+    }
+    else if (6<= i) {
+        console.log(">> " + i);
+    }
+    else {
+        console.log(i);
+    }
 
 
 
@@ -87,5 +108,16 @@
 // etc.
 // ==========================================
 
+for (let i = 1; i < 100; i++) {
+    if ( i % 3 === 0 && i % 5 === 0) {
+        console.log ("FizzBuzz") }
+  else if (i % 5 === 0) {
+        console.log("Buzz");}
+    else if (i % 3 === 0) {
+    console.log("Fizz"); }
+    else {
+        console.log(i)
+    }
+}
 
 
